@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Bootstrap Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Ensure the form container uses 60% of the viewport height on mobile */
+        .form-container {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Adjust width to be responsive */
+        .form-wrapper {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* Styling for the header */
+        .form-header {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #343a40;
+        }
+
+        /* Larger inputs for better mobile experience */
+        .form-control {
+            font-size: 1.1rem;
+            padding: 12px;
+        }
+
+        /* Custom submit button styling */
+        .btn-custom {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 25px;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+
+        /* Flexbox utility for full-width submit button */
+        .btn-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Spacing between input fields */
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+        <div class="form-container">
+            <div class="form-wrapper">
+                <h2 class="form-header">Vaishnodevi-trip Expenses</h2>
+                <form method="post" action="https://script.google.com/macros/s/AKfycbxy997sPmykPZ0ZVITZzHp-HCmFPxZHcdqy2TDOnOqlVy1s2E-TRtLgtu1zChFhlxTcjw/exec" name="trip">
+                    <div class="form-group">
+                        <label for="item">Item</label>
+                        <input type="text" class="form-control" name="item" placeholder="Enter item">
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="text" class="form-control" name="amount" placeholder="Enter your amount">
+                    </div>
+                    <div class="btn-wrapper">
+                        <button type="submit" class="btn btn-custom btn-block">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
